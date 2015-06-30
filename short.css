@@ -1,0 +1,83 @@
+*{
+	text-decoration: none;
+	background-color:#DCFFD4;
+	text-align: center;
+}
+
+nav {
+
+	text-decoration: none;
+	display: inline;
+}
+ul {
+	text-decoration: none;
+    list-style-type: none;
+        padding: 10px;
+    background: white;
+}
+li {
+	text-decoration: none;
+	display: inline;
+	padding: 0px 10px 0px 10px;
+}
+
+ol li{
+	display: block;
+	color:#000066;
+}
+
+a:hover, a:active {
+    background-color: #7A991A;
+}
+section {
+	float: left;
+	 margin: 0 1.5%;
+     width: 63%;
+     border: solid;
+}
+footer {
+	float: left;
+	 margin: 0 1.5%;
+     width: 63%;
+     border: solid;
+  }
+  /*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.0%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 95%;
+}
+.span_1_of_2 {
+	width: 44.5%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
